@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>radio</title>
+  <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0"/>
+</head>
+<body>
+<canvas id="canvas" width="400" height="400"></canvas>
+<script src="sea.js"></script>
+<script>
+  seajs.use('../init', function(Radio) {
+    new Radio('#canvas', [
+      ['a', 100],
+      ['b', 50]
+    ], {
+      size: 0.5
+    });
+  });
+</script>
+</body>
+</html>
